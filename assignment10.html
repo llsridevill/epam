@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		#header
+		{
+			width:100%;
+			height:60px;
+			background-color:#34c0eb;
+		}
+		.block 
+		{
+		  width: 90%;
+		  border: none;
+		  background-color: #34c0eb;
+		  color: white;
+		  padding: 14px 28px;
+		  font-size: 16px;
+		  cursor: pointer;
+		  text-align: center;
+		  border-radius: 12px;
+		}
+		.form_inputs
+		{
+		  width: 90%;
+		  margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+		  display:block;
+		  border-radius:14px;
+		  background-color:#34c0eb;
+		  color: white;
+		  padding: 10px 30px;
+		  font-size: 16px;
+		  text-align: center;
+		}
+		.fb 
+		{
+		  background-color: #3B5998;
+		  color: white;
+		}
+
+		.google {
+		  background-color: #dd4b39;
+		  color: white;
+		}
+		input,
+		.btn 
+		{
+		  width: 100%;
+		  padding: 12px;
+		  border: none;
+		  border-radius: 4px;
+		  margin: 5px 0;
+		  opacity: 0.85;
+		  display: inline-block;
+		  font-size: 17px;
+		  line-height: 20px;
+		  text-decoration: none; /* remove underline from anchors */
+		}
+		.col
+		{
+		  float: left;
+		  width: 50%;
+		  margin: auto;
+		  padding: 0 50px;
+		  margin-top: 6px;
+		}
+		
+		* {
+		  box-sizing: border-box;
+		}
+
+		input,
+		.btn1 {
+		  width: 90%;
+		  padding: 12px;
+		  border: none;
+		  border-radius: 12px;
+		  margin: 5px 0;
+		  opacity: 0.85;
+		  display: inline-block;
+		  text-align:center;
+		  font-size: 17px;
+		  line-height: 20px;
+		  text-decoration: none; 
+		}
+		.fb {
+		  background-color: #3B5998;
+		  color: white;
+		}
+		.google {
+		  background-color: #dd4b39;
+		  color: white;
+		}
+		.epam{
+		  background-color: #afe031;
+		  color: white;
+		}
+		
+		.col {
+		  float: left;
+		  width: 50%;
+		  margin: auto;
+		  padding: 0 ;
+		  margin-top: 6px;
+		}
+		  .col {
+			width: 100%;
+			margin-top: 0;
+		  }
+		  .vl {
+			display: none;
+		  }
+		  .hide-md-lg {
+			display: block;
+			text-align: center;
+		  }
+		.icon 
+		{
+		  padding: 10px;
+		  background: dodgerblue;
+		  color: white;
+		  min-width: 50px;
+		  text-align: center;
+		}
+		input[type=text], 
+		input[type=password] { 
+			width: 100%; 
+			padding: 12px 40px; 
+			margin: 8px 0; 
+			display: inline-block; 
+			border: 1px solid #ccc; 
+			box-sizing: border-box; 
+		} 
+
+		/* Set a hover effect for the button*/ 
+		button:hover { 
+			opacity: 0.8; 
+		} 
+
+		/* Set extra style for the cancel button*/ 
+		.container { 
+			padding: 10px; 
+		} 
+	
+		.fontuser { 
+			position: relative; 
+		} 
+		
+		.fontuser i{ 
+			position: absolute; 
+			left: 15px; 
+			top: 19px; 
+			color: gray; 
+		} 
+		
+		.fontpassword { 
+			position: relative; 
+		} 
+		
+		.fontpassword i{ 
+			position: absolute; 
+			left: 15px; 
+			top: 25px; ; 
+			color: gray; 
+		}
+
+	</style>
+	</head>
+
+	<body>
+	<center>
+	<div style="height:480px; width:300px">
+		<div id="header">
+			<p>
+				<div style="width:50px;height:50px;float: left;margin-right:70px">
+				<image style="width:40px;height:50px; padding-top:5px;margin-left:10px" src="graduation-cap.png"></image>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				</div>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				<div style="padding-top:2px;margin-left:20px" >
+					<font color="white" ><font size="5px"><b>Sign in</b> </font>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp X</font>
+				</div>	
+			<p>
+		</div><br>
+		<div>
+			<form>
+				<div class="container"> 
+					<div class="fontuser"> 
+						<input type="text"
+								placeholder="mail@example.com"
+								name="uname" required> 
+						<i class="fa fa-envelope fa-lg"></i> 
+					</div> 
+					
+					<div class="fontpassword"> 
+						<input type="password"
+								placeholder="password"
+								name="psw" required> 
+						<i class="fa fa-unlock-alt fa-lg"></i> 
+					</div> 
+		        </div>
+				<a  class="form_inputs">
+				  <i class="fa"><b>SIGN IN<b></i>
+				</a>
+			<p><div style="float:left;padding-left:10px; color:#465e66">forgot password?</div>
+			<div style="float:right;padding-right:10px;color:#465e66">Register!</div></p>
+		</div><br><br>
+		<div>
+			<hr style="float:left;width:40%">&nbsp OR<hr style="float:right;width:40%">
+		</div><br>
+		<center>
+		<div class="col">
+			<a  class="fb btn1">
+			  <i class="fa fa-facebook fa-fw"></i>
+			 </a>
+			<a  class="google btn1"><i class="fa fa-google fa-fw">
+			  </i>
+			</a><br><br>
+			<a  class="epam btn1">< EPAM LOGIN >
+			</a>
+		</div>
+		</center>
+	</div>	
+	</center>
+	</body>
+</html>
